@@ -1,0 +1,127 @@
+body {
+  margin: auto;
+  width: 60%;
+  max-width: 800px;
+  min-width: 400px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.navbar {
+  height: 100px;
+}
+
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 300;
+  position: fixed;
+  float: left;
+  display: inline;
+}
+
+.menu ul {
+  padding-top: 12px;
+  list-style-type: none;
+}
+
+.menu ul li {
+  position: relative;
+  float: right;
+  margin-right: auto;
+}
+
+.menu ul li a {
+  display: block;
+  color: #000000;
+  font-size: 16px;
+  padding-top: 31px;
+  padding-right: 10px;
+}
+
+.menu ul a:hover,
+.menu ul a:focus {
+  color: #AFE1AF;
+}
+
+.menu .current {
+  color: #AFE1AF;
+  font-weight: bold;
+}
+
+.me-pic {
+  width: 20%;
+  height: auto;
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.bio {
+  display: inline;
+  font-size: 15px;
+}
+
+h1 {
+  color: black;
+  text-align: left;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0px;
+}
+
+h3 {
+  color: #AFE1AF;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  color: #89af89;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  height: 80px;
+}
+
+
+strong{
+  font-weight: 500;
+}
+
+
+p {
+  text-align: justify;
+  margin: 0px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #AFE1AF;
+  color: white;
+  text-align: center;
+}
+
+.footer img {
+  float: right;
+  display: inline;
+  padding: 5px;
+}
+
+.footer p {
+  margin: 10px;
+}
