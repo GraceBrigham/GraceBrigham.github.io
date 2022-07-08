@@ -1,8 +1,10 @@
+
+
 body {
   margin: auto;
   width: 60%;
+  min-width: 700px;
   max-width: 800px;
-  min-width: 400px;
   background-color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -41,11 +43,11 @@ body {
 
 .menu ul a:hover,
 .menu ul a:focus {
-  color: #AFE1AF;
+  color: #8bc34a;
 }
 
 .menu .current {
-  color: #AFE1AF;
+  color: #8bc34a;
   font-weight: bold;
 }
 
@@ -63,6 +65,10 @@ body {
   font-size: 15px;
 }
 
+.content-block {
+  margin-bottom: 30px;
+}
+
 h1 {
   color: black;
   text-align: left;
@@ -77,7 +83,7 @@ h2 {
 }
 
 h3 {
-  color: #AFE1AF;
+  color: #8bc34a;
   margin: 0;
 }
 
@@ -86,7 +92,7 @@ a {
 }
 
 em {
-  color: #89af89;
+  color: #8bc34a;
   font-weight: 500;
   font-style: normal;
 }
@@ -111,7 +117,7 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #AFE1AF;
+  background-color: #8bc34a;
   color: white;
   text-align: center;
 }
@@ -123,5 +129,6 @@ p {
 }
 
 .footer p {
+  margin-top: 20px;
   margin: 10px;
 }
