@@ -1,4 +1,5 @@
 
+/* Overall */
 
 body {
   margin: auto;
@@ -8,7 +9,50 @@ body {
   background-color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-size: 15px;
+  min-height: 100%;
 }
+
+h1 {
+  color: black;
+  text-align: left;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 5px;
+}
+
+h3 {
+  color: #8ABD91;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+
+em {
+  color: #8ABD91;
+  font-weight: 500;
+  font-style: normal;
+}
+
+a {
+  color: #8ABD91;
+}
+
+.content-block {
+  margin-bottom: 40px;
+}
+
+/* NAVBAR */
 
 .navbar {
   height: 100px;
@@ -17,10 +61,11 @@ body {
 .navbar h1 {
   font-size: 30px;
   font-weight: 300;
-  position: fixed;
   float: left;
   display: inline;
 }
+
+/* MENU */
 
 .menu ul {
   padding-top: 12px;
@@ -36,20 +81,26 @@ body {
 .menu ul li a {
   display: block;
   color: #000000;
-  font-size: 16px;
-  padding-top: 31px;
+  font-size: 18px;
+  padding-top: 29px;
   padding-right: 10px;
 }
 
 .menu ul a:hover,
 .menu ul a:focus {
-  color: #8bc34a;
+  color: #8ABD91;
+}
+
+.menu a {
+  text-decoration: none;
 }
 
 .menu .current {
-  color: #8bc34a;
+  color: #8ABD91;
   font-weight: bold;
 }
+
+/* BIO */
 
 .me-pic {
   width: 20%;
@@ -62,62 +113,36 @@ body {
 
 .bio {
   display: inline;
-  font-size: 15px;
+  font-size: 16px;
 }
 
-.content-block {
-  margin-bottom: 30px;
+/* COOL THINGS LIST */
+
+.cool-things-list {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1 {
-  color: black;
-  text-align: left;
-  font-weight: 500;
-  font-size: 45px;
+.cool-things-list li {
+  margin-top: 10px;
 }
 
-h2 {
-  font-weight: 400;
-  font-size: 40px;
-  margin: 0px;
+/* LETS CHAT */
+.lets-chat {
+  margin-bottom: 90px;
+  text-align: center;
 }
 
-h3 {
-  color: #8bc34a;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-em {
-  color: #8bc34a;
-  font-weight: 500;
-  font-style: normal;
-}
-
-header {
-  height: 80px;
-}
-
-
-strong{
-  font-weight: 500;
-}
-
-
-p {
-  text-align: justify;
-  margin: 0px;
-}
+/* FOOTER */
 
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #8bc34a;
+  height: 60px;
+  background-color: #8ABD91;
   color: white;
   text-align: center;
 }
@@ -129,6 +154,7 @@ p {
 }
 
 .footer p {
-  margin-top: 20px;
+  padding-top: 10px;
   margin: 10px;
+  text-align: left;
 }
