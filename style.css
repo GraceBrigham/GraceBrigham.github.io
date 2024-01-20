@@ -1,0 +1,168 @@
+
+/* Overall */
+
+body {
+  margin: auto;
+  width: 60%;
+  min-width: 700px;
+  max-width: 800px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  min-height: 100%;
+}
+
+h1 {
+  color: black;
+  text-align: left;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: #87CEEB;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+
+em {
+  color: #87CEEB;
+  font-weight: 500;
+  font-style: normal;
+}
+
+a {
+  color: #87CEEB;
+}
+
+li {
+  margin-top: 10px;
+}
+
+.content-block {
+  margin-bottom: 40px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 80px;
+}
+
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 300;
+  float: left;
+  display: inline;
+}
+
+/* MENU */
+
+.menu ul {
+  padding-top: 12px;
+  list-style-type: none;
+}
+
+.menu ul li {
+  position: relative;
+  float: right;
+  margin-right: auto;
+}
+
+.menu ul li a {
+  display: block;
+  color: #87CEEB;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 17px;
+  padding-right: 10px;
+}
+
+.menu ul a:hover,
+.menu ul a:focus {
+  color: #87CEEB;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu .current {
+  color: #87CEEB;
+  font-weight: bold;
+}
+
+/* BIO */
+
+.me-pic {
+  width: 20%;
+  height: auto;
+  display: inline;
+  float: right;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.bio {
+  display: inline;
+  font-size: 16px;
+}
+
+/* COOL THINGS LIST */
+
+.cool-things-list {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* LETS CHAT */
+.lets-chat {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #87CEEB;
+  color: white;
+  text-align: center;
+}
+
+.footer img {
+  float: right;
+  display: inline;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.footer p {
+  padding-top: 10px;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
