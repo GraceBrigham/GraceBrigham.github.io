@@ -46,6 +46,7 @@ em {
 
 a {
   color: #87CEEB;
+  font-weight: 400;
 }
 
 li {
@@ -127,6 +128,37 @@ li {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* PUBLICATIONS */
+.pub {
+  margin-bottom: 20px;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.paper-author {
+  text-decoration: underline;
+}
+
+.paper-conference {
+  font-style: italic;
+}
+
+.paper-icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.paper-icon {
+  border: 1px solid #87CEEB;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
 }
 
 /* LETS CHAT */
