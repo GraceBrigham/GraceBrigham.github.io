@@ -81,15 +81,17 @@ li {
   position: relative;
   float: right;
   margin-right: auto;
+  margin-top: 17px;
+  color: #87CEEB;
+  font-size: 25px;
+  font-weight: 300;
 }
 
 .menu ul li a {
   display: block;
-  color: #87CEEB;
-  font-size: 18px;
-  font-weight: 400;
-  padding-top: 17px;
-  padding-right: 10px;
+  border: 1.5px solid #87CEEB;
+  border-radius: 8px;
+  padding: 5px 8px;
 }
 
 .menu ul a:hover,
