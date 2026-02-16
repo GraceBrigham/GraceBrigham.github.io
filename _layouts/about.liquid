@@ -5,8 +5,7 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        {{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -25,10 +24,26 @@ layout: default
             {% assign profile_image_class = 'img-fluid z-depth-1
       rounded' %}
           {% endif %}
+          {% if page.profile.alt %}
+            {% assign profile_image_alt = page.profile.alt %}
+          {% elsif site.first_name or site.middle_name or site.last_name %}
+            {% capture profile_image_alt %}
+              {% if site.first_name %}{{ site.first_name }}{% endif %}
+              {% if site.middle_name %}
+                {% if site.first_name %} {% endif %}{{ site.middle_name }}
+              {% endif %}
+              {% if site.last_name %}
+                {% if site.first_name or site.middle_name %} {% endif %}{{ site.last_name }}
+              {% endif %}
+            {% endcapture %}
+            {% assign profile_image_alt = profile_image_alt | strip %}
+          {% else %}
+            {% assign profile_image_alt = page.profile.image %}
+          {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile_image_alt
             cache_bust=true
           %}
         {% endif %}

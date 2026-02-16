@@ -82,8 +82,12 @@
         }
 
         > em {
-          border-bottom: 1px solid;
           font-style: normal;
+          font-weight: 600;
+          text-decoration: underline;
+          text-decoration-color: var(--global-theme-color);
+          text-decoration-thickness: 0.1em;
+          text-underline-offset: 0.1em;
         }
 
         > span.more-authors {
@@ -112,9 +116,6 @@
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
           }
-        }
-        a.award.btn {
-          border-color: var(--global-highlight-color);
         }
       }
 
@@ -177,7 +178,7 @@
       border: dashed 1px var(--global-bg-color);
     }
     div.award.hidden.open {
-      border-color: var(--global-highlight-color);
+      border-color: var(--global-text-color);
     }
   }
 }

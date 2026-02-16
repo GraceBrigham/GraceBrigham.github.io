@@ -1,9 +1,9 @@
 ---
 layout: default
-permalink: /blog/
-title: blog
-nav: true
-nav_order: 1
+permalink: /press/
+title: press
+nav: false
+nav_order: 2
 pagination:
   enabled: true
   collection: posts

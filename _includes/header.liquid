@@ -5,16 +5,17 @@
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
+            {% if site.first_name or site.middle_name or site.last_name %}
+              {% capture navbar_name %}
+                {% if site.first_name %}{{ site.first_name }}{% endif %}
+                {% if site.middle_name %}
+                  {% if site.first_name %} {% endif %}{{ site.middle_name }}
+                {% endif %}
+                {% if site.last_name %}
+                  {% if site.first_name or site.middle_name %} {% endif %}{{ site.last_name }}
+                {% endif %}
+              {% endcapture %}
+              <span class="font-weight-bold">{{ navbar_name | strip }}</span>
             {% endif %}
           {% else %}
             {{- site.title -}}
